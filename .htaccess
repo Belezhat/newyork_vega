@@ -1,0 +1,6 @@
+# Active ou désactive l'exécution du moteur de réécriture
+RewriteEngine on
+
+# Définition des règles pour le moteur de réécriture
+RewriteRule ^(.*)$ index.php [L]
+
