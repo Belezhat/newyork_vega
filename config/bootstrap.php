@@ -18,6 +18,14 @@
      require __DIR__ . "/constants.php";
 
      // Chargement des variables d'environnement
-     $envFile = parse_ini_file(ROOT ."/env.conf");
+     require __DIR__ . "/dotenv.php";
+  
 
-     var_dump($envFile);
+    // Chargement de la configuration système
+    require __DIR__ . "/system.php";
+
+    // Chargement de la configuration session
+    require __DIR__ . "/session.php";
+
+    // Chargement du monolog
+    require __DIR__ . "/monolog.php";
